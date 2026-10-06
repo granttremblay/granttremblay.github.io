@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{%- assign words = content | number_of_words -%}
+{%- assign minutes = words | divided_by: 200 | plus: 1 -%}
+<article class="post">
+  <header class="post-hero{% unless page.image %} post-hero--plain{% endunless %}">
+    {%- if page.image -%}
+    <div class="post-hero-bg">
+      <img src="{{ page.image | relative_url }}" alt="">
+      <div class="post-hero-overlay"></div>
+    </div>
+    {%- endif -%}
+    <div class="container container-narrow post-hero-inner">
+      <a class="post-back" href="{{ '/blog/' | relative_url }}">← Great Observatories</a>
+      {%- if page.categories and page.categories.size > 0 -%}
+      <div class="post-cats">
+        {%- for c in page.categories -%}<span class="post-cat">{{ c }}</span>{%- endfor -%}
+      </div>
+      {%- endif -%}
+      <h1 class="post-title">{{ page.title }}</h1>
+      {%- if page.subtitle -%}<p class="post-subtitle">{{ page.subtitle }}</p>{%- endif -%}
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        <span class="dot">·</span>{{ minutes }} min read
+      </p>
+    </div>
+  </header>
+
+  <div class="container container-narrow post-body">
+    {{ content }}
+  </div>
+
+  <footer class="container container-narrow post-footer">
+    <div class="post-share">
+      <span>Share</span>
+      <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://bsky.app/intent/compose?text={{ page.title | uri_escape }}%20{{ page.url | absolute_url | uri_escape }}" target="_blank" rel="noopener">Bluesky</a>
+      <a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}">Email</a>
+    </div>
+    <nav class="post-nav">
+      {%- if page.previous -%}
+      <a class="post-nav-prev" href="{{ page.previous.url | relative_url }}">
+        <span>← Newer</span><strong>{{ page.previous.title }}</strong></a>
+      {%- else -%}<span></span>{%- endif -%}
+      {%- if page.next -%}
+      <a class="post-nav-next" href="{{ page.next.url | relative_url }}">
+        <span>Older →</span><strong>{{ page.next.title }}</strong></a>
+      {%- endif -%}
+    </nav>
+    <a class="btn btn-outline post-allposts" href="{{ '/blog/' | relative_url }}">All posts</a>
+  </footer>
+</article>

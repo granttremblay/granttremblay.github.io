@@ -1,0 +1,86 @@
+# ============================================================
+#  Grant Tremblay — personal website (Jekyll + GitHub Pages)
+# ============================================================
+
+title: Grant Tremblay
+tagline: Astrophysicist
+# One-line site description used for SEO / social cards.
+description: >-
+  Dr. Grant Tremblay is an astrophysicist at the Center for Astrophysics |
+  Harvard & Smithsonian, studying star formation and the growth of
+  supermassive black holes.
+
+# ------------------------------------------------------------
+#  IMPORTANT — read before launch
+#  While the site is staged at granttremblay.github.io, leave `url`
+#  as the github.io address below. When you are ready to cut the
+#  granttremblay.com domain over to GitHub Pages:
+#    1. change `url` to  https://www.granttremblay.com
+#    2. create a file named  CNAME  at the repo root containing:
+#         www.granttremblay.com
+#    3. point your DNS at GitHub Pages (see README).
+#  Canonical URLs, the sitemap and RSS all derive from `url`.
+# ------------------------------------------------------------
+url: "https://granttremblay.github.io"
+baseurl: ""
+
+# Personal / contact details (surfaced in templates)
+author:
+  name: Grant Tremblay
+  email: gtremblay@cfa.harvard.edu
+email: gtremblay@cfa.harvard.edu
+orcid: "0000-0002-5445-5401"
+twitter: astrogrant
+github: granttremblay
+linkedin: grant-tremblay-389a417
+cv_url: "http://hea-www.cfa.harvard.edu/~tremblay/grant_tremblay_cv.pdf"
+ads_url: "https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5445-5401&sort=date%20desc"
+
+# Blog post URLs — MUST match the old Squarespace slugs so existing
+# Google results (e.g. /blog/trls) keep resolving after the cutover.
+permalink: /blog/:title/
+
+timezone: America/New_York
+lang: en
+
+# Reading
+paginate: false
+excerpt_separator: "<!--more-->"
+
+# Build
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# jekyll-feed config
+feed:
+  path: blog/feed.xml
+
+# Default front-matter
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - .github
+  - "*.py"
+  - node_modules

@@ -1,0 +1,19 @@
+# Jekyll build output & caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Local Ruby/bundler
+vendor/
+.bundle/
+
+# Secrets — never commit your ADS token (use a GitHub Actions secret instead)
+scripts/.ads_token
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Session tooling (machine-specific)
+.claude/

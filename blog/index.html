@@ -1,0 +1,46 @@
+---
+layout: default
+title: "Great Observatories — Blog"
+permalink: /blog/
+description: "A research and (astro)policy blog by Grant Tremblay. Views my own."
+body_class: blog-index
+---
+
+<header class="blog-hero">
+  <div class="blog-hero-bg">
+    <img src="{{ '/images/hubble_heritage.jpg' | relative_url }}" alt="">
+  </div>
+  <div class="container blog-hero-inner">
+    <h1>Great Observatories</h1>
+    <p>A research and (astro)policy blog. These thoughts may be boring or wrong (sometimes both),
+       and reflect no one's opinion but my own.</p>
+    {%- assign cats = site.posts | map: "categories" | join: "," | split: "," | uniq | sort -%}
+    <div class="blog-filters">
+      <button class="blog-filter active" data-cat="all">All</button>
+      {%- for c in cats -%}{%- if c != "" -%}
+      <button class="blog-filter" data-cat="{{ c }}">{{ c }}</button>
+      {%- endif -%}{%- endfor -%}
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="blog-list">
+    {%- for post in site.posts -%}
+    <a class="blog-card" href="{{ post.url | relative_url }}" data-cats="{{ post.categories | join: '|' }}">
+      {%- if post.image -%}
+      <div class="blog-card-media"><img src="{{ post.image | relative_url }}" alt="" loading="lazy"></div>
+      {%- endif -%}
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          {%- if post.categories.size > 0 -%}<span class="blog-card-cat">{{ post.categories | first }}</span>{%- endif -%}
+        </div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.subtitle | default: post.description | strip_html | truncate: 140 }}</p>
+        <span class="read-more">Read more →</span>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+</div>

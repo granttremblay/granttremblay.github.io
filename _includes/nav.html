@@ -1,0 +1,17 @@
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">Grant&nbsp;Tremblay</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="{{ '/#about' | relative_url }}">About</a></li>
+      <li><a href="{{ '/#research' | relative_url }}">Research</a></li>
+      <li><a href="{{ '/#press' | relative_url }}">Press</a></li>
+      <li><a href="{{ '/#books' | relative_url }}">Books</a></li>
+      <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+      <li><a href="{{ site.cv_url }}" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </div>
+</nav>

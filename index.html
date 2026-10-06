@@ -1,317 +1,428 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grant Tremblay — Astrophysicist</title>
-    <meta name="description" content="Dr. Grant Tremblay is a Federal Astrophysicist at the Center for Astrophysics | Harvard & Smithsonian.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: "Grant Tremblay"
+description: "Dr. Grant Tremblay is an astrophysicist at the Center for Astrophysics | Harvard & Smithsonian, studying star formation and the growth of supermassive black holes."
+body_class: home
+---
 
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-inner">
-            <a href="#hero" class="nav-logo">GT</a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#roles">Roles</a></li>
-                <li><a href="#outreach">Outreach</a></li>
-                <li><a href="#books">Books</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="{{ '/images/vlt_milkyway.jpg' | relative_url }}" alt="The Milky Way over ESO's Very Large Telescope" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-pre fade-up">Center for Astrophysics&nbsp;| Harvard &amp; Smithsonian</p>
+    <h1 class="hero-title fade-up delay-1">Grant Tremblay</h1>
+    <p class="hero-subtitle fade-up delay-2">Astrophysicist studying how galaxies form stars and how
+      supermassive black holes shape the Universe around them.</p>
+    <a href="#about" class="hero-scroll fade-up delay-3" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="{{ '/images/portrait2.jpeg' | relative_url }}" alt="Dr. Grant Tremblay">
+      </div>
+      <div class="about-text">
+        <h2 class="section-heading reveal">About</h2>
+        <p class="reveal">I study star formation and the dynamics of multiphase gas amid energetic
+          feedback from active galaxies, whose central engines are powered by accreting supermassive
+          black holes.</p>
+        <p class="reveal">I'm a Federal Astrophysicist and External Relations Lead at the Smithsonian
+          Astrophysical Observatory, part of the <a href="https://www.cfa.harvard.edu" target="_blank" rel="noopener">Center
+          for Astrophysics | Harvard &amp; Smithsonian</a>. Previously, I was Deputy P.I. and Project
+          Scientist for the Chandra X-ray Observatory's High Resolution Camera.</p>
+        <p class="reveal">Before the Smithsonian, I was a NASA Einstein Fellow at Yale University, a
+          Fellow in the Directorate for Science at the European Southern Observatory (ESO) near Munich,
+          and an Astronomer at ESO's Very Large Telescope in the Atacama Desert of Chile. Earlier, I held
+          positions at the Rochester Institute of Technology, the Space Telescope Science Institute, Johns
+          Hopkins University, and the University of Rochester.</p>
+        <p class="reveal">As of August 2024, I also serve as Senior Vice President of the
+          <a href="https://aas.org" target="_blank" rel="noopener">American Astronomical Society</a>,
+          Vice Chair of the <a href="https://science.nasa.gov/researchers/nac/science-advisory-committees/apac" target="_blank" rel="noopener">NASA
+          Astrophysics Advisory Committee</a>, and a Lecturer in
+          <a href="https://astronomy.fas.harvard.edu/" target="_blank" rel="noopener">Harvard's Department of Astronomy</a>.</p>
+        <div class="about-actions reveal">
+          <a href="{{ '/bio/' | relative_url }}" class="btn">Full biography</a>
+          <a href="{{ site.cv_url }}" target="_blank" rel="noopener" class="btn btn-outline">Curriculum Vitae</a>
+          <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline">Publications</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Hero -->
-    <section class="hero" id="hero">
-        <div class="hero-bg">
-            <img src="images/vlt_milkyway.jpg" alt="Milky Way over the Very Large Telescope" loading="eager">
-            <div class="hero-overlay"></div>
+<!-- ============ RESEARCH ============ -->
+<section class="section section-dark" id="research">
+  <div class="container">
+    <h2 class="section-heading reveal">Research</h2>
+    <p class="section-intro reveal">My group uses the world's most powerful ground- and space-based
+      observatories — among them ALMA, the VLT/MUSE, Hubble, and Chandra — to understand how galaxies
+      grow their stars, and how the supermassive black holes at their hearts regulate that growth through
+      spectacular, energetic feedback.</p>
+
+    <div class="research-grid">
+      <article class="research-card reveal">
+        <div class="research-card-image"><img src="{{ '/assets/img/nature/featured_a2597.jpg' | relative_url }}" alt="A galaxy-scale fountain of cold molecular gas in Abell 2597" loading="lazy"></div>
+        <div class="research-card-body">
+          <h3>Galactic Fountains</h3>
+          <p>With ALMA and the VLT/MUSE, we discovered a galaxy-scale fountain of cold molecular gas
+            lifted and recycled by a supermassive black hole — published in <em>Nature</em> and covered
+            by the Washington Post, BBC, New York Times, and TIME.</p>
         </div>
-        <div class="hero-content">
-            <p class="hero-pre fade-up">Center for Astrophysics | Harvard &amp; Smithsonian</p>
-            <h1 class="hero-title fade-up delay-1">Grant Tremblay</h1>
-            <p class="hero-subtitle fade-up delay-2">Federal Astrophysicist &amp; External Relations Lead</p>
-            <a href="#about" class="hero-scroll fade-up delay-3" aria-label="Scroll down">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-            </a>
+      </article>
+      <article class="research-card reveal">
+        <div class="research-card-image"><img src="{{ '/images/hydra_a.png' | relative_url }}" alt="The Hydra A galaxy cluster" loading="lazy"></div>
+        <div class="research-card-body">
+          <h3>Black Hole Feedback</h3>
+          <p>I study how supermassive black holes regulate star formation in massive galaxies through
+            powerful jets and outflows that heat, stir, and reshape the surrounding multiphase gas.</p>
         </div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image reveal">
-                    <img src="images/portrait2.jpeg" alt="Dr. Grant Tremblay">
-                </div>
-                <div class="about-text">
-                    <h2 class="section-heading reveal">About</h2>
-                    <p class="reveal">I study star formation and the dynamics of multiphase gas amid energetic feedback from active galaxies, whose central engines are powered by accreting supermassive black holes.</p>
-                    <p class="reveal">I'm a Federal Astrophysicist and External Relations Lead at the Smithsonian Astrophysical Observatory, part of the <a href="https://www.cfa.harvard.edu" target="_blank" rel="noopener">Center for Astrophysics | Harvard &amp; Smithsonian</a>. Previously, I served as Deputy P.I. and Project Scientist for the Chandra X-ray Observatory's High Resolution Camera.</p>
-                    <p class="reveal">Before joining the Smithsonian, I was a NASA Einstein Fellow at Yale University and a Fellow at the European Southern Observatory (ESO) near Munich. I also served as an Astronomer at ESO's Very Large Telescope in the Atacama Desert of Chile. Earlier in my career, I held positions at the Rochester Institute of Technology, the Space Telescope Science Institute, Johns Hopkins University, and the University of Rochester.</p>
-                    <p class="reveal">My work is supported by the Smithsonian Institution and NASA through grants from the Hubble Space Telescope, Chandra X-ray Observatory, and Spitzer Space Telescope programs.</p>
-                </div>
-            </div>
+      </article>
+      <article class="research-card reveal">
+        <div class="research-card-image"><img src="{{ '/images/hubble_heritage.jpg' | relative_url }}" alt="A strongly lensed galaxy behind the cluster SDSS J1531" loading="lazy"></div>
+        <div class="research-card-body">
+          <h3>Gravitational Lensing</h3>
+          <p>Our Hubble discovery of strongly lensed "beads on a string" of young stars behind a massive
+            cluster was featured by NASA, ESA, NBC News, Forbes, and Astronomy Picture of the Day.</p>
         </div>
-    </section>
-
-    <!-- Research -->
-    <section class="section section-dark" id="research">
-        <div class="container">
-            <h2 class="section-heading reveal">Research Highlights</h2>
-            <p class="section-intro reveal">My research uses multiwavelength observations to understand how galaxies form stars and how supermassive black holes shape their environments through energetic feedback.</p>
-
-            <div class="research-grid">
-                <div class="research-card reveal">
-                    <div class="research-card-image">
-                        <img src="images/nature_result.png" alt="Galaxy-scale fountain driven by a black hole" loading="lazy">
-                    </div>
-                    <div class="research-card-body">
-                        <h3>Galactic Fountains</h3>
-                        <p>Using ALMA and the VLT/MUSE instrument, we discovered a galaxy-scale fountain of cold molecular gas driven by a supermassive black hole, published in <em>Nature</em>. This was covered by the Washington Post, BBC, New York Times, Popular Science, and TIME.</p>
-                    </div>
-                </div>
-
-                <div class="research-card reveal">
-                    <div class="research-card-image">
-                        <img src="images/hydra_a.png" alt="Hydra A galaxy cluster" loading="lazy">
-                    </div>
-                    <div class="research-card-body">
-                        <h3>Black Hole Feedback</h3>
-                        <p>My work on AGN feedback explores how supermassive black holes regulate star formation in massive galaxies through powerful jets and outflows that heat and reshape the surrounding gas.</p>
-                    </div>
-                </div>
-
-                <div class="research-card reveal">
-                    <div class="research-card-image">
-                        <img src="images/hs_print.jpg" alt="Hubble Space Telescope observation" loading="lazy">
-                    </div>
-                    <div class="research-card-body">
-                        <h3>Gravitational Lensing</h3>
-                        <p>Our Hubble discovery of strongly lensed galaxies behind massive clusters was featured by NASA, ESA, NBC News, Forbes, and Astronomy Picture of the Day (APOD).</p>
-                    </div>
-                </div>
-
-                <div class="research-card reveal">
-                    <div class="research-card-image">
-                        <img src="images/rogue_blackhole.png" alt="Rogue supermassive black hole" loading="lazy">
-                    </div>
-                    <div class="research-card-body">
-                        <h3>Rogue Black Holes</h3>
-                        <p>We identified a supermassive black hole apparently kicked from its host galaxy by gravitational waves, with coverage in NASA press releases, the Washington Post, and Science magazine.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="research-links reveal">
-                <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Tremblay%2C+Grant%22&sort=date+desc" target="_blank" rel="noopener" class="btn">Publications on ADS</a>
-                <a href="http://hea-www.cfa.harvard.edu/~tremblay/grant_tremblay_cv.pdf" target="_blank" rel="noopener" class="btn btn-outline">Curriculum Vitae</a>
-            </div>
+      </article>
+      <article class="research-card reveal">
+        <div class="research-card-image"><img src="{{ '/images/rogue_blackhole.png' | relative_url }}" alt="A recoiling supermassive black hole" loading="lazy"></div>
+        <div class="research-card-body">
+          <h3>Recoiling Black Holes</h3>
+          <p>We found evidence for a supermassive black hole apparently kicked from its host galaxy's
+            core by gravitational waves, with coverage from NASA, the Washington Post, and Science.</p>
         </div>
-    </section>
+      </article>
+    </div>
 
-    <!-- Roles -->
-    <section class="section" id="roles">
-        <div class="container">
-            <h2 class="section-heading reveal">Leadership &amp; Roles</h2>
-            <div class="roles-grid">
-                <div class="role-card reveal">
-                    <div class="role-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    </div>
-                    <h3>Senior Vice President</h3>
-                    <p>American Astronomical Society</p>
-                </div>
-                <div class="role-card reveal">
-                    <div class="role-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                    </div>
-                    <h3>Vice Chair</h3>
-                    <p>NASA Astrophysics Advisory Committee</p>
-                </div>
-                <div class="role-card reveal">
-                    <div class="role-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c6 3 12 0 12 0v-5"/></svg>
-                    </div>
-                    <h3>Lecturer</h3>
-                    <p>Harvard Department of Astronomy</p>
-                </div>
-                <div class="role-card reveal">
-                    <div class="role-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    </div>
-                    <h3>Head</h3>
-                    <p>Lynx Science Study Office</p>
-                </div>
-                <div class="role-card reveal">
-                    <div class="role-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
-                    </div>
-                    <h3>Research Adviser</h3>
-                    <p>Harvard's Banneker Institute</p>
-                </div>
-                <div class="role-card reveal">
-                    <div class="role-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-                    </div>
-                    <h3>Team Member</h3>
-                    <p>The Astropy Project</p>
-                </div>
-            </div>
+    <div class="research-links reveal">
+      <a href="{{ '/publications/' | relative_url }}" class="btn">All publications</a>
+      <a href="{{ site.ads_url }}" target="_blank" rel="noopener" class="btn btn-outline">ADS / NASA SciX</a>
+      <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener" class="btn btn-outline">Code on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH GROUP ============ -->
+<section class="section" id="group">
+  <div class="container">
+    <h2 class="section-heading reveal">Research Group</h2>
+    <p class="section-intro reveal">I've been extraordinarily lucky to work with a phenomenal group of
+      postdoctoral fellows and Ph.D. students. Here's some of their great work — do check out their
+      own pages.</p>
+    <div class="group-grid">
+      <figure class="group-card reveal">
+        <img src="{{ '/images/group_nevin.jpg' | relative_url }}" alt="Dr. Rebecca Nevin" loading="lazy">
+        <figcaption>
+          <strong><a href="https://beckynevin.github.io" target="_blank" rel="noopener">Dr. Rebecca Nevin</a></strong>
+          <span>Identifying recent galaxy mergers with linear discriminant analysis</span>
+        </figcaption>
+      </figure>
+      <figure class="group-card reveal">
+        <img src="{{ '/images/group_terrazas.jpg' | relative_url }}" alt="Dr. Bryan Terrazas" loading="lazy">
+        <figcaption>
+          <strong><a href="https://bryanterrazas.weebly.com" target="_blank" rel="noopener">Dr. Bryan Terrazas</a></strong>
+          <span>Linking specific star formation, stellar mass, and black hole mass in IllustrisTNG</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="group-members reveal">With gratitude to past and present group members and mentees, including
+      <strong>Osase Omoruyi</strong> and <strong>Aimee Schechter</strong>, and the undergraduate researchers
+      of Harvard's <a href="https://bannekerinstitute.fas.harvard.edu/" target="_blank" rel="noopener">Banneker &amp; Aztlán Institute</a>.</p>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP & ROLES ============ -->
+<section class="section section-dark" id="roles">
+  <div class="container">
+    <h2 class="section-heading reveal">Leadership &amp; Roles</h2>
+    <div class="roles-grid">
+      <div class="role-card reveal">
+        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Senior Vice President</h3><p>American Astronomical Society</p>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Vice Chair</h3><p>NASA Astrophysics Advisory Committee</p>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c6 3 12 0 12 0v-5"/></svg></div>
+        <h3>Lecturer</h3><p>Harvard Department of Astronomy</p>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+        <h3>Science Office Head</h3><p>Lynx X-ray Observatory</p>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg></div>
+        <h3>Research Adviser</h3><p>Harvard's Banneker &amp; Aztlán Institute</p>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+        <h3>Team Member</h3><p>The Astropy Project</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESS & MEDIA ============ -->
+<section class="section" id="press">
+  <div class="container">
+    <h2 class="section-heading reveal">Press &amp; Media</h2>
+    <p class="section-intro reveal">Our work has been featured in press releases from NASA, ESO, and ESA,
+      and covered around the world. A selection:</p>
+    <div class="press-grid">
+
+      <article class="press-card reveal">
+        <div class="press-card-media"><img src="{{ '/assets/img/nature/featured_a2597.jpg' | relative_url }}" alt="" loading="lazy"></div>
+        <div class="press-card-body">
+          <h3>A Galactic Fountain, Detected by ALMA &amp; MUSE</h3>
+          <p class="press-ref">Headlines based on <a href="https://arxiv.org/abs/1808.00473" target="_blank" rel="noopener">Tremblay et al. 2018</a></p>
+          <div class="press-links">
+            <a href="https://www.eso.org/public/news/eso1836/" target="_blank" rel="noopener">ESO</a>
+            <a href="https://www.nasa.gov/mission_pages/chandra/images/cosmic-fountain-powered-by-giant-black-hole.html" target="_blank" rel="noopener">NASA / Chandra</a>
+            <a href="https://news.yale.edu/2018/11/06/finding-answers-galactic-fountain" target="_blank" rel="noopener">Yale</a>
+            <a href="https://www.space.com/42441-monster-black-hole-fountain-spotted-video.html" target="_blank" rel="noopener">Space.com</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Outreach -->
-    <section class="section section-dark" id="outreach">
-        <div class="container">
-            <h2 class="section-heading reveal">Outreach &amp; Public Engagement</h2>
-
-            <div class="outreach-grid">
-                <div class="outreach-item reveal">
-                    <div class="outreach-image">
-                        <img src="images/aot1.jpg" alt="Astronomy on Tap" loading="lazy">
-                    </div>
-                    <div class="outreach-text">
-                        <h3>Astronomy on Tap</h3>
-                        <p>I organized the New Haven chapter and work with the Boston team of <a href="http://astronomyontap.org/" target="_blank" rel="noopener">Astronomy on Tap</a>, bringing accessible astronomy talks to bars, breweries, and other casual venues for the public.</p>
-                    </div>
-                </div>
-
-                <div class="outreach-item outreach-item-reverse reveal">
-                    <div class="outreach-image">
-                        <img src="images/documentary1.jpg" alt="Science Channel Documentary" loading="lazy">
-                    </div>
-                    <div class="outreach-text">
-                        <h3>Television &amp; Documentary</h3>
-                        <p>I appear as a cast member and science advisor on <em>Space's Deepest Secrets</em> (Science Channel) and <em>How the Universe Works</em> (Discovery Channel). My <a href="https://www.imdb.com/name/nm8955325/" target="_blank" rel="noopener">IMDB page</a> has the full list.</p>
-                    </div>
-                </div>
-
-                <div class="outreach-item reveal">
-                    <div class="outreach-image">
-                        <img src="images/awesomecon.png" alt="Awesome Con with David Tennant" loading="lazy">
-                    </div>
-                    <div class="outreach-text">
-                        <h3>Public Events</h3>
-                        <p>I love connecting science with popular culture. At Awesome Con in Washington, DC, I moderated a Q&amp;A with David Tennant before an audience of about 5,000 people.</p>
-                    </div>
-                </div>
-
-                <div class="outreach-item outreach-item-reverse reveal">
-                    <div class="outreach-image">
-                        <img src="images/aot_crowd.jpg" alt="Banneker Institute" loading="lazy">
-                    </div>
-                    <div class="outreach-text">
-                        <h3>The Banneker Institute</h3>
-                        <p>I serve as a research adviser and course instructor for <a href="https://bannekerinstitute.fas.harvard.edu/" target="_blank" rel="noopener">Harvard's Banneker Institute</a>, which prepares undergraduate students of color for graduate programs in astronomy through research, community building, and social justice education.</p>
-                    </div>
-                </div>
-            </div>
+      <article class="press-card reveal">
+        <div class="press-card-media"><img src="{{ '/images/nature_result.png' | relative_url }}" alt="" loading="lazy"></div>
+        <div class="press-card-body">
+          <h3>A Black Hole Casts Shadows <span class="press-badge">Nature</span></h3>
+          <p class="press-ref">An ALMA result in <em>Nature</em>, from <a href="https://arxiv.org/abs/1606.02304v2" target="_blank" rel="noopener">Tremblay et al. 2016</a></p>
+          <div class="press-links">
+            <a href="http://www.eso.org/public/news/eso1618/" target="_blank" rel="noopener">ESO</a>
+            <a href="https://www.washingtonpost.com/news/speaking-of-science/wp/2016/06/09/scientists-catch-a-black-hole-in-an-unusual-feeding-frenzy/" target="_blank" rel="noopener">Washington Post</a>
+            <a href="http://www.bbc.com/news/uk-wales-south-east-wales-36483786" target="_blank" rel="noopener">BBC</a>
+            <a href="http://www.nytimes.com/2016/06/16/science/black-hole-questions-answers.html" target="_blank" rel="noopener">New York Times</a>
+            <a href="http://www.popsci.com/scientists-find-new-kind-space-weather-near-black-hole" target="_blank" rel="noopener">Popular Science</a>
+            <a href="http://time.com/4360402/black-holes-see-three-new-ways/" target="_blank" rel="noopener">TIME</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Books -->
-    <section class="section" id="books">
-        <div class="container">
-            <h2 class="section-heading reveal">Books</h2>
-            <div class="books-grid">
-                <div class="book-card reveal">
-                    <div class="book-image">
-                        <img src="images/book_chandra.jpg" alt="Light from the Void book cover" loading="lazy">
-                    </div>
-                    <div class="book-text">
-                        <h3>Light from the Void</h3>
-                        <p class="book-subtitle">Twenty Years of Discovery with NASA's Chandra X-ray Observatory</p>
-                        <p>A celebration of two decades of breakthrough science from the most powerful X-ray telescope ever built.</p>
-                        <div class="book-links">
-                            <a href="https://www.amazon.com/dp/1588346579" target="_blank" rel="noopener">Amazon</a>
-                            <span class="book-sep">/</span>
-                            <a href="https://www.barnesandnoble.com/w/light-from-the-void-kimberly-arcand/1131329284" target="_blank" rel="noopener">Barnes &amp; Noble</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="book-card reveal">
-                    <div class="book-image">
-                        <img src="images/book_blackholes.png" alt="What Do Black Holes Eat for Dinner? book cover" loading="lazy">
-                    </div>
-                    <div class="book-text">
-                        <h3>What Do Black Holes Eat for Dinner?</h3>
-                        <p class="book-subtitle">Coauthored with Katie Coppens</p>
-                        <p>A children's book exploring the science of black holes in an accessible and fun way.</p>
-                        <div class="book-links">
-                            <a href="https://www.amazon.com/dp/1943431493" target="_blank" rel="noopener">Amazon</a>
-                            <span class="book-sep">/</span>
-                            <a href="https://www.bookshop.org/p/books/what-do-black-holes-eat-for-dinner-katie-coppens/15350710" target="_blank" rel="noopener">Bookshop</a>
-                        </div>
-                        <p class="book-donate">Royalties are donated to <strong>Black Girls Code</strong>, the <strong>Million Girls Moonshot</strong>, and the <strong>National Urban League</strong>.</p>
-                    </div>
-                </div>
-            </div>
+      <article class="press-card reveal">
+        <div class="press-card-media"><img src="{{ '/images/hubble_heritage.jpg' | relative_url }}" alt="" loading="lazy"></div>
+        <div class="press-card-body">
+          <h3>A Unique Galaxy in a Strong-Lensing Cluster</h3>
+          <p class="press-ref">Headlines based on <a href="http://arxiv.org/abs/1407.2251" target="_blank" rel="noopener">Tremblay et al. 2014</a></p>
+          <div class="press-links">
+            <a href="http://www.nbcnews.com/science/space/hubble-spots-intergalactic-string-pearls-n152961" target="_blank" rel="noopener">NBC News</a>
+            <a href="http://www.forbes.com/sites/startswithabang/2016/01/04/a-distant-galaxy-cluster-reveals-the-power-of-einsteins-gravity/" target="_blank" rel="noopener">Forbes</a>
+            <a href="http://hubblesite.org/newscenter/archive/releases/2014/26/full/" target="_blank" rel="noopener">NASA / HubbleSite</a>
+            <a href="http://www.spacetelescope.org/news/heic1414/" target="_blank" rel="noopener">ESA</a>
+            <a href="http://apod.nasa.gov/apod/ap140715.html" target="_blank" rel="noopener">APOD</a>
+            <a href="https://astrobites.org/2014/07/18/star-formation-on-a-string/" target="_blank" rel="noopener">Astrobites</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Gallery -->
-    <section class="section section-dark" id="gallery">
-        <div class="container">
-            <h2 class="section-heading reveal">Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item reveal"><img src="images/paranal.jpg" alt="Grant at ESO Paranal" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/telescope_observing.jpg" alt="Observing at the telescope" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/hubble_heritage.jpg" alt="Hubble Heritage image" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/galactic_fountain.jpg" alt="Research at the summit" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/img_observatory.jpg" alt="At the observatory" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/china.jpg" alt="Conference in China" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/prague.jpg" alt="Conference in Prague" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/documentary2.jpg" alt="On set for documentary" loading="lazy"></div>
-            </div>
+      <article class="press-card reveal">
+        <div class="press-card-media"><img src="{{ '/images/hs_print.jpg' | relative_url }}" alt="" loading="lazy"></div>
+        <div class="press-card-body">
+          <h3>Galaxy-Scale Fountains Powered by Black Holes</h3>
+          <p class="press-ref">Headlines based on <a href="http://arxiv.org/abs/1505.03533" target="_blank" rel="noopener">Tremblay et al. 2015</a></p>
+          <div class="press-links">
+            <a href="https://www.nasa.gov/feature/goddard/nasa-s-hubble-finds-evidence-of-galaxy-star-birth-regulated-by-black-hole-fountain" target="_blank" rel="noopener">NASA</a>
+            <a href="http://hubblesite.org/newscenter/archive/releases/2015/26/full/" target="_blank" rel="noopener">HubbleSite</a>
+            <a href="http://news.yale.edu/2015/08/06/sorting-through-thickets-stars-elliptical-galaxies-far-far-away" target="_blank" rel="noopener">Yale</a>
+            <a href="http://www.iflscience.com/space/black-holes-can-be-thermostats-galaxies" target="_blank" rel="noopener">IFLScience</a>
+            <a href="http://www.dailymail.co.uk/sciencetech/article-3192069/" target="_blank" rel="noopener">Daily Mail</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Contact -->
-    <section class="section" id="contact">
-        <div class="container container-narrow">
-            <h2 class="section-heading reveal">Get in Touch</h2>
-            <p class="contact-text reveal">I'm always happy to discuss research collaborations, speaking engagements, media inquiries, or just interesting science.</p>
-            <div class="contact-links reveal">
-                <a href="mailto:gtremblay@cfa.harvard.edu" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-                    <span>gtremblay@cfa.harvard.edu</span>
-                </a>
-                <a href="https://github.com/granttremblay" target="_blank" rel="noopener" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/grant-tremblay-389a417" target="_blank" rel="noopener" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="http://hea-www.cfa.harvard.edu/~tremblay/grant_tremblay_cv.pdf" target="_blank" rel="noopener" class="contact-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                    <span>CV (PDF)</span>
-                </a>
-            </div>
+      <article class="press-card reveal">
+        <div class="press-card-media"><img src="{{ '/images/rogue_blackhole.png' | relative_url }}" alt="" loading="lazy"></div>
+        <div class="press-card-body">
+          <h3>A Gravitational Wave Kicks a Monster Black Hole</h3>
+          <p class="press-ref">From our High-Redshift 3C HST Survey — <a href="https://arxiv.org/abs/1611.05501" target="_blank" rel="noopener">3C 186</a></p>
+          <div class="press-links">
+            <a href="https://www.nasa.gov/feature/goddard/2017/gravitational-wave-kicks-monster-black-hole-out-of-galactic-core" target="_blank" rel="noopener">NASA</a>
+            <a href="https://www.washingtonpost.com/news/speaking-of-science/wp/2017/03/24/this-black-hole-is-being-pushed-around-its-galaxy-by-gravitational-waves/" target="_blank" rel="noopener">Washington Post</a>
+            <a href="http://www.sciencemag.org/news/2017/03/are-gravitational-waves-kicking-black-hole-out-its-galaxy" target="_blank" rel="noopener">Science</a>
+            <a href="https://www.engadget.com/2017/03/23/hubble-telescope-finds-black-hole-shot-out-of-a-distant-galaxy/" target="_blank" rel="noopener">Engadget</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>The views expressed on this site are entirely my own and do not represent those of NASA, the Smithsonian, Harvard, Yale, or ESO.</p>
-            <p class="footer-copy">&copy; 2026 Grant Tremblay</p>
+      <article class="press-card reveal">
+        <div class="press-card-media"><img src="{{ '/assets/img/banneker/a2052.jpg' | relative_url }}" alt="" loading="lazy"></div>
+        <div class="press-card-body">
+          <h3>A Starving Black Hole Returns a Galaxy to the Shadows</h3>
+          <p class="press-ref">The first release from the <a href="http://www.cars-survey.org" target="_blank" rel="noopener">Close AGN Reference Survey (CARS)</a> — Mrk 1018</p>
+          <div class="press-links">
+            <a href="http://www.eso.org/public/news/eso1631/" target="_blank" rel="noopener">ESO</a>
+            <a href="http://chandra.harvard.edu/photo/2016/mrk1018/" target="_blank" rel="noopener">Chandra</a>
+            <a href="http://news.yale.edu/2016/09/15/ch-ch-ch-changes-distant-quasar" target="_blank" rel="noopener">Yale</a>
+            <a href="http://www.forbes.com/sites/startswithabang/2016/12/05/an-x-ray-surprise-when-black-holes-stop-eating-galaxies-fade-away/" target="_blank" rel="noopener">Forbes</a>
+            <a href="https://cosmosmagazine.com/space/starving-black-hole-sends-shining-galaxy-into-shadow" target="_blank" rel="noopener">Cosmos</a>
+          </div>
         </div>
-    </footer>
+      </article>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKS ============ -->
+<section class="section section-dark" id="books">
+  <div class="container">
+    <h2 class="section-heading reveal">Books for the General Public</h2>
+    <div class="books-grid">
+      <div class="book-card reveal">
+        <div class="book-image"><img src="{{ '/images/book_chandra.jpg' | relative_url }}" alt="Light from the Void" loading="lazy"></div>
+        <div class="book-text">
+          <h3>Light from the Void</h3>
+          <p class="book-subtitle">Twenty Years of Discovery with NASA's Chandra X-ray Observatory</p>
+          <p>A journey through the cosmos in a stunning collection of images from Chandra's two decades of
+            operation — black holes, exploded stars, galaxy clusters, and more — each explained along the way.</p>
+          <div class="book-links">
+            <a href="https://www.amazon.com/Light-Void-Discovery-Chandra-Observatory/dp/1588346692" target="_blank" rel="noopener">Amazon</a><span class="book-sep">/</span>
+            <a href="https://www.smithsonianbooks.com/store/aviation-military-history/light-void-chandra-x-ray-observatory/" target="_blank" rel="noopener">Smithsonian Books</a>
+          </div>
+        </div>
+      </div>
+      <div class="book-card reveal">
+        <div class="book-image"><img src="{{ '/images/book_blackholes.png' | relative_url }}" alt="What Do Black Holes Eat for Dinner?" loading="lazy"></div>
+        <div class="book-text">
+          <h3>What Do Black Holes Eat for Dinner?</h3>
+          <p class="book-subtitle">Written with children's author Katie Coppens</p>
+          <p>Space facts from an astrophysicist, brought down to earth by a middle-school teacher — real,
+            wacky, smart questions from kids, answered with accuracy and humor.</p>
+          <div class="book-links">
+            <a href="https://www.amazon.com/What-Black-Holes-Eat-Dinner/dp/194343154X" target="_blank" rel="noopener">Amazon</a><span class="book-sep">/</span>
+            <a href="https://tumblehomebooks.org/book/what-do-black-holes-eat-for-dinner/" target="_blank" rel="noopener">Tumblehome</a><span class="book-sep">/</span>
+            <a href="https://bookshop.org/books/what-do-black-holes-eat-for-dinner/9781943431540" target="_blank" rel="noopener">Bookshop</a>
+          </div>
+          <p class="book-donate">As a Smithsonian scientist, I keep no royalties from my books — 100% of my
+            personal proceeds are donated to <a href="https://www.blackgirlscode.com/" target="_blank" rel="noopener">Black Girls Code</a>,
+            the <a href="https://milliongirlsmoonshot.org/" target="_blank" rel="noopener">Million Girls Moonshot</a>, and the
+            <a href="https://nul.org/" target="_blank" rel="noopener">National Urban League</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION & OUTREACH ============ -->
+<section class="section" id="outreach">
+  <div class="container">
+    <h2 class="section-heading reveal">Education &amp; Outreach</h2>
+    <div class="outreach-grid">
+      <div class="outreach-item reveal">
+        <div class="outreach-image"><img src="{{ '/images/img_observatory.jpg' | relative_url }}" alt="Research mentorship at the observatory" loading="lazy"></div>
+        <div class="outreach-text">
+          <h3>The Banneker &amp; Aztlán Institute</h3>
+          <p>I'm a research adviser and course instructor for
+            <a href="https://bannekerinstitute.fas.harvard.edu/" target="_blank" rel="noopener">Harvard's Banneker &amp; Aztlán Institute</a>,
+            which prepares undergraduate students of color for graduate programs in astronomy through
+            research, community building, and social-justice education.
+            <a href="{{ '/banneker/' | relative_url }}">See the 2018 research project →</a></p>
+        </div>
+      </div>
+      <div class="outreach-item outreach-item-reverse reveal">
+        <div class="outreach-image"><img src="{{ '/images/aot1.jpg' | relative_url }}" alt="Astronomy on Tap" loading="lazy"></div>
+        <div class="outreach-text">
+          <h3>Astronomy on Tap</h3>
+          <p>I organized the New Haven chapter and work with the Boston team of
+            <a href="http://astronomyontap.org/" target="_blank" rel="noopener">Astronomy on Tap</a>, bringing
+            accessible astronomy talks to bars, breweries, and other casual venues for the public.</p>
+        </div>
+      </div>
+      <div class="outreach-item reveal">
+        <div class="outreach-image"><img src="{{ '/images/documentary1.jpg' | relative_url }}" alt="Documentary and film" loading="lazy"></div>
+        <div class="outreach-text">
+          <h3>Documentary &amp; Film</h3>
+          <p>I'm a main cast member and science advisor on the Discovery and Science Channel series
+            <em><a href="https://www.sciencechannel.com/tv-shows/how-the-universe-works/" target="_blank" rel="noopener">How the Universe Works</a></em>
+            and <em><a href="https://www.sciencechannel.com/tv-shows/spaces-deepest-secrets/" target="_blank" rel="noopener">Space's Deepest Secrets</a></em>,
+            with forthcoming work for the Smithsonian Channel, the BBC, and PBS/NOVA. My
+            <a href="https://www.imdb.com/name/nm8955325/" target="_blank" rel="noopener">IMDb page</a> has the full list.</p>
+        </div>
+      </div>
+      <div class="outreach-item outreach-item-reverse reveal">
+        <div class="outreach-image"><img src="{{ '/images/awesomecon.png' | relative_url }}" alt="Public events — a Q&A with David Tennant at Awesome Con" loading="lazy"></div>
+        <div class="outreach-text">
+          <h3>Public Events</h3>
+          <p>I love connecting science with popular culture. At
+            <a href="http://awesome-con.com/" target="_blank" rel="noopener">Awesome Con</a> in Washington, DC,
+            I moderated a Q&amp;A with David Tennant (Doctor Who) before an audience of about 5,000 people.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CODE ============ -->
+<section class="section section-dark" id="code">
+  <div class="container">
+    <h2 class="section-heading reveal">Code &amp; Software</h2>
+    <p class="section-intro reveal">I'm a longtime member of
+      <a href="http://www.astropy.org/" target="_blank" rel="noopener">The Astropy Project</a>, the community
+      effort to build a core Python package and ecosystem for astronomy. Most of my research software is
+      open source.</p>
+    <div class="code-links reveal">
+      <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener" class="btn">GitHub</a>
+      <a href="http://www.astropy.org/" target="_blank" rel="noopener" class="btn btn-outline">Astropy</a>
+      <a href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener" class="btn btn-outline">ORCID</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FROM THE BLOG ============ -->
+<section class="section" id="blog">
+  <div class="container">
+    <div class="section-head-row reveal">
+      <h2 class="section-heading">From the Blog</h2>
+      <a href="{{ '/blog/' | relative_url }}" class="section-head-link">Great Observatories →</a>
+    </div>
+    <p class="section-intro reveal">Occasional thoughts on science, life, and (astro)policy. These may be
+      boring or wrong (sometimes both), and reflect no one's opinion but my own.</p>
+    <div class="blog-teaser-grid">
+      {%- for post in site.posts limit: 3 -%}
+      <a class="blog-teaser-card reveal" href="{{ post.url | relative_url }}">
+        {%- if post.image -%}<div class="blog-teaser-media"><img src="{{ post.image | relative_url }}" alt="" loading="lazy"></div>{%- endif -%}
+        <div class="blog-teaser-body">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </div>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-dark" id="contact">
+  <div class="container container-narrow">
+    <h2 class="section-heading reveal">Get in Touch</h2>
+    <p class="contact-text reveal">I'm always happy to discuss research collaborations, speaking
+      engagements, media inquiries, or just interesting science.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:{{ site.email }}" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+        <span>{{ site.email }}</span></a>
+      <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        <span>GitHub</span></a>
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>@astrogrant</span></a>
+      <a href="{{ site.cv_url }}" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span>CV (PDF)</span></a>
+    </div>
+  </div>
+</section>

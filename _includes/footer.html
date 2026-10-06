@@ -1,0 +1,15 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-social">
+      <a href="mailto:{{ site.email }}" aria-label="Email">Email</a>
+      <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener">ORCID</a>
+      <a href="{{ site.cv_url }}" target="_blank" rel="noopener">CV</a>
+    </div>
+    <p class="footer-disclaimer">The views expressed on this site are entirely my own and do not
+      represent those of NASA, the Smithsonian, Harvard, Yale, or ESO.</p>
+    <p class="footer-copy">&copy; {{ 'now' | date: "%Y" }} Grant Tremblay</p>
+  </div>
+</footer>
