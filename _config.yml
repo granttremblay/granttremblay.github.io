@@ -44,7 +44,8 @@ timezone: America/New_York
 lang: en
 
 # Reading
-paginate: false
+# NOTE: do not add `paginate:` here — GitHub Pages bundles jekyll-paginate,
+# which crashes on a non-nil value (even `false`). We don't paginate.
 excerpt_separator: "<!--more-->"
 
 # Build
