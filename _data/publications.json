@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26",
+ "updated": "2026-11-02",
  "source": "Crossref",
  "orcid": "0000-0002-5445-5401",
  "count": 55,
@@ -337,6 +337,31 @@
    "url": "https://doi.org/10.3847/1538-4357/adb71a"
   },
   {
+   "title": "Mapping Feedback Signatures in 3C 297: A Quasar-host Merger at Cosmic Noon",
+   "authors": [
+    "Duggal, C.",
+    "O’Dea, C. P.",
+    "Baum, S. A.",
+    "Jiwa, J.",
+    "Tremblay, G. R.",
+    "Chiaberge, M.",
+    "Miley, G.",
+    "Stanghellini, C.",
+    "Sparks, W."
+   ],
+   "author_format": "ads",
+   "year": 2025,
+   "pubdate": "2025-9-23",
+   "venue": "The Astrophysical Journal",
+   "volume": "991",
+   "page": "138",
+   "doi": "10.3847/1538-4357/adfa98",
+   "bibcode": "",
+   "arxiv": "",
+   "citations": 1,
+   "url": "https://doi.org/10.3847/1538-4357/adfa98"
+  },
+  {
    "title": "Constraining Star Formation in M87 Using Deep Hubble Space Telescope UV Data",
    "authors": [
     "Tamhane, P.",
@@ -367,31 +392,6 @@
    "url": "https://doi.org/10.3847/1538-4357/adf20d"
   },
   {
-   "title": "Mapping Feedback Signatures in 3C 297: A Quasar-host Merger at Cosmic Noon",
-   "authors": [
-    "Duggal, C.",
-    "O’Dea, C. P.",
-    "Baum, S. A.",
-    "Jiwa, J.",
-    "Tremblay, G. R.",
-    "Chiaberge, M.",
-    "Miley, G.",
-    "Stanghellini, C.",
-    "Sparks, W."
-   ],
-   "author_format": "ads",
-   "year": 2025,
-   "pubdate": "2025-9-23",
-   "venue": "The Astrophysical Journal",
-   "volume": "991",
-   "page": "138",
-   "doi": "10.3847/1538-4357/adfa98",
-   "bibcode": "",
-   "arxiv": "",
-   "citations": 0,
-   "url": "https://doi.org/10.3847/1538-4357/adfa98"
-  },
-  {
    "title": "A Candidate Supermassive Black Hole in a Gravitationally Lensed Galaxy at Z ≈ 10",
    "authors": [
     "Kovács, O. E.",
@@ -415,7 +415,7 @@
    "doi": "10.3847/2041-8213/ad391f",
    "bibcode": "",
    "arxiv": "",
-   "citations": 98,
+   "citations": 100,
    "url": "https://doi.org/10.3847/2041-8213/ad391f"
   },
   {
@@ -956,7 +956,7 @@
    "doi": "10.3847/1538-4357/ac7c74",
    "bibcode": "",
    "arxiv": "",
-   "citations": 5437,
+   "citations": 5490,
    "url": "https://doi.org/10.3847/1538-4357/ac7c74"
   },
   {
@@ -1051,7 +1051,7 @@
    "doi": "10.1051/0004-6361/202243697",
    "bibcode": "",
    "arxiv": "",
-   "citations": 16,
+   "citations": 17,
    "url": "https://doi.org/10.1051/0004-6361/202243697"
   },
   {
@@ -1675,7 +1675,7 @@
    "doi": "10.3847/1538-3881/aabc4f",
    "bibcode": "",
    "arxiv": "",
-   "citations": 7565,
+   "citations": 7609,
    "url": "https://doi.org/10.3847/1538-3881/aabc4f"
   },
   {
@@ -1730,7 +1730,7 @@
    "doi": "10.3847/1538-4357/aabace",
    "bibcode": "",
    "arxiv": "",
-   "citations": 130,
+   "citations": 131,
    "url": "https://doi.org/10.3847/1538-4357/aabace"
   },
   {
