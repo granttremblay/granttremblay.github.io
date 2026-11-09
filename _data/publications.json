@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-09",
  "source": "Crossref",
  "orcid": "0000-0002-5445-5401",
  "count": 55,
@@ -28,6 +28,39 @@
    "arxiv": "",
    "citations": 5,
    "url": "https://doi.org/10.3847/2041-8213/ae3d0e"
+  },
+  {
+   "title": "A Deep Chandra View of A2597: Bubbles, Shocks, Cold Fueling, and a Plasma Depletion Layer",
+   "authors": [
+    "Omoruyi, O.",
+    "Tremblay, G.",
+    "Baum, S. A.",
+    "Clarke, T. E.",
+    "Dabhade, P.",
+    "Fabian, A.",
+    "Gaspari, M.",
+    "Gulati, S.",
+    "Kharb, P.",
+    "Markevitch, M.",
+    "Nulsen, P.",
+    "O’Dea, C. P.",
+    "Randall, S.",
+    "Raychaudhury, S.",
+    "Vaddi, S.",
+    "Vikhlinin, A.",
+    "Zuhone, J."
+   ],
+   "author_format": "ads",
+   "year": 2026,
+   "pubdate": "2026-1-16",
+   "venue": "The Astrophysical Journal",
+   "volume": "997",
+   "page": "114",
+   "doi": "10.3847/1538-4357/ae2006",
+   "bibcode": "",
+   "arxiv": "",
+   "citations": 2,
+   "url": "https://doi.org/10.3847/1538-4357/ae2006"
   },
   {
    "title": "ALMA Central Molecular Zone Exploration Survey (ACES) – I. Overview",
@@ -142,39 +175,6 @@
    "arxiv": "",
    "citations": 1,
    "url": "https://doi.org/10.1093/mnras/stag377"
-  },
-  {
-   "title": "A Deep Chandra View of A2597: Bubbles, Shocks, Cold Fueling, and a Plasma Depletion Layer",
-   "authors": [
-    "Omoruyi, O.",
-    "Tremblay, G.",
-    "Baum, S. A.",
-    "Clarke, T. E.",
-    "Dabhade, P.",
-    "Fabian, A.",
-    "Gaspari, M.",
-    "Gulati, S.",
-    "Kharb, P.",
-    "Markevitch, M.",
-    "Nulsen, P.",
-    "O’Dea, C. P.",
-    "Randall, S.",
-    "Raychaudhury, S.",
-    "Vaddi, S.",
-    "Vikhlinin, A.",
-    "Zuhone, J."
-   ],
-   "author_format": "ads",
-   "year": 2026,
-   "pubdate": "2026-1-16",
-   "venue": "The Astrophysical Journal",
-   "volume": "997",
-   "page": "114",
-   "doi": "10.3847/1538-4357/ae2006",
-   "bibcode": "",
-   "arxiv": "",
-   "citations": 1,
-   "url": "https://doi.org/10.3847/1538-4357/ae2006"
   },
   {
    "title": "JWST Reveals How Black Holes are Fed: Kiloparsec-scale Multiphase Filaments Feed Subkiloparsec Circumnuclear Disks",
@@ -453,6 +453,31 @@
    "url": "https://doi.org/10.3847/1538-4357/ad19db"
   },
   {
+   "title": "Optical- and UV-continuum Morphologies of Compact Radio Source Hosts",
+   "authors": [
+    "Duggal, C.",
+    "O’Dea, C. P.",
+    "Baum, S. A.",
+    "Labiano, A.",
+    "Tadhunter, C.",
+    "Worrall, D. M.",
+    "Morganti, R.",
+    "Tremblay, G. R.",
+    "Dicken, D."
+   ],
+   "author_format": "ads",
+   "year": 2024,
+   "pubdate": "2024-4-1",
+   "venue": "The Astrophysical Journal",
+   "volume": "965",
+   "page": "17",
+   "doi": "10.3847/1538-4357/ad2513",
+   "bibcode": "",
+   "arxiv": "",
+   "citations": 11,
+   "url": "https://doi.org/10.3847/1538-4357/ad2513"
+  },
+  {
    "title": "A Broad Line-width, Compact, Millimeter-bright Molecular Emission Line Source near the Galactic Center",
    "authors": [
     "Ginsburg, A.",
@@ -507,31 +532,6 @@
    "arxiv": "",
    "citations": 11,
    "url": "https://doi.org/10.3847/2041-8213/ad47fa"
-  },
-  {
-   "title": "Optical- and UV-continuum Morphologies of Compact Radio Source Hosts",
-   "authors": [
-    "Duggal, C.",
-    "O’Dea, C. P.",
-    "Baum, S. A.",
-    "Labiano, A.",
-    "Tadhunter, C.",
-    "Worrall, D. M.",
-    "Morganti, R.",
-    "Tremblay, G. R.",
-    "Dicken, D."
-   ],
-   "author_format": "ads",
-   "year": 2024,
-   "pubdate": "2024-4-1",
-   "venue": "The Astrophysical Journal",
-   "volume": "965",
-   "page": "17",
-   "doi": "10.3847/1538-4357/ad2513",
-   "bibcode": "",
-   "arxiv": "",
-   "citations": 10,
-   "url": "https://doi.org/10.3847/1538-4357/ad2513"
   },
   {
    "title": "“Beads-on-a-string” Star Formation Tied to One of the Most Powerful Active Galactic Nucleus Outbursts Observed in a Cool-core Galaxy Cluster",
@@ -956,7 +956,7 @@
    "doi": "10.3847/1538-4357/ac7c74",
    "bibcode": "",
    "arxiv": "",
-   "citations": 5490,
+   "citations": 5544,
    "url": "https://doi.org/10.3847/1538-4357/ac7c74"
   },
   {
@@ -1278,7 +1278,7 @@
    "doi": "10.3847/2041-8213/ab65c7",
    "bibcode": "",
    "arxiv": "",
-   "citations": 83,
+   "citations": 85,
    "url": "https://doi.org/10.3847/2041-8213/ab65c7"
   },
   {
@@ -1675,7 +1675,7 @@
    "doi": "10.3847/1538-3881/aabc4f",
    "bibcode": "",
    "arxiv": "",
-   "citations": 7609,
+   "citations": 7641,
    "url": "https://doi.org/10.3847/1538-3881/aabc4f"
   },
   {
@@ -1710,7 +1710,7 @@
    "doi": "10.3847/1538-4357/aaaa1b",
    "bibcode": "",
    "arxiv": "",
-   "citations": 169,
+   "citations": 170,
    "url": "https://doi.org/10.3847/1538-4357/aaaa1b"
   },
   {
@@ -1730,7 +1730,7 @@
    "doi": "10.3847/1538-4357/aabace",
    "bibcode": "",
    "arxiv": "",
-   "citations": 131,
+   "citations": 133,
    "url": "https://doi.org/10.3847/1538-4357/aabace"
   },
   {
@@ -1785,7 +1785,7 @@
    "doi": "10.3847/1538-4357/aad6dd",
    "bibcode": "",
    "arxiv": "",
-   "citations": 113,
+   "citations": 115,
    "url": "https://doi.org/10.3847/1538-4357/aad6dd"
   },
   {
